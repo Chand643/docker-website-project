@@ -199,20 +199,25 @@ Through this project, I learned:
 ---
 
 Project Implementation Screenshots
+
 Figure 1: Infrastructure Setup
+
 
 <img width="328" height="535" alt="image" src="https://github.com/user-attachments/assets/827b4c18-d583-4855-a686-89eae9525b8a" />
 
 Figure 2: Firewall Configuration
 
+
 <img width="602" height="217" alt="image" src="https://github.com/user-attachments/assets/7e3430ec-3ba7-441f-bf22-99e8b479ab06" />
 
 Figure 3: NAT Configuration
+
 
 <img width="602" height="182" alt="image" src="https://github.com/user-attachments/assets/73707f00-9ba7-400b-8b6f-7a0a27cec1a8" />
 
 
 Figure 4: Website Output
+
 
 <img width="602" height="314" alt="image" src="https://github.com/user-attachments/assets/84a0dd8f-c08b-4297-b552-a52ce11aa10a" />
 
