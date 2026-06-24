@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Docker Website Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+      color: #dcdcdc;
+    }
+    .container {
+      width: 85%;
+      margin: 40px auto;
+      display: grid;
+      gap: 25px;
+    }
+    .card {
+      background: rgba(255,255,255,0.12);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .card h2 {
+      color: #00e5ff;
+      margin-top: 0;
+    }
+    .steps {
+      background: #111;
+      padding: 15px;
+      border-radius: 10px;
+      color: #00ff99;
+      font-family: monospace;
+      line-height: 1.6;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Docker Container Website Project</h1>
+  <p>A simple website hosted inside a Docker container using Nginx</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>About This Project</h2>
+    <p>
+      This project demonstrates how a static website can be hosted inside a Docker container.
+      The website is built using HTML and CSS, then served using an Nginx web server running inside Docker.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What is Docker?</h2>
+    <p>
+      Docker is a containerization platform. It allows us to package an application with all its required files,
+      libraries, and dependencies into one lightweight container. This makes the application easy to run on any system.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>What is a Container?</h2>
+    <p>
+      A container is an isolated environment where an application runs. In this project, the website runs inside
+      an Nginx container. The container has its own web server and website files.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>How This Website is Running</h2>
+    <p>
+      First, an HTML file was created. Then a Dockerfile was written using the Nginx image.
+      Docker copied the website file into the Nginx web directory. After building the Docker image,
+      a container was started and port 8080 of the VM was connected to port 80 of the container.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Project Workflow</h2>
+    <div class="steps">
+      1. Create index.html website file<br>
+      2. Create Dockerfile<br>
+      3. Use Nginx as base image<br>
+      4. Build Docker image<br>
+      5. Run Docker container<br>
+      6. Access website using VM public IP and port 8080
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Port Mapping</h2>
+    <p>
+      The container runs Nginx on port 80. The VM exposes the website on port 8080.
+      So when we open <b>http://VM_PUBLIC_IP:8080</b>, the request goes to the Docker container.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p>Created by Chand Parveen | Docker Web Hosting Project</p>
+</footer>
+
+</body>
+</html>
